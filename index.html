@@ -580,18 +580,15 @@
 
 /* Mobile */
 @media (max-width: 768px) {
-
     nav {
         display: none;
         flex-direction: column;
-        position: fixed;   /* 🔥 CHANGE */
-        top: 0;
-        left: 0;
+        background: white;
+        position: absolute;
+        top: 80px;
+        right: 0;
         width: 100%;
-        height: 100vh;     /* 🔥 FULL SCREEN */
-        background: white; /* ✅ WHITE BACKGROUND */
-        padding: 80px 20px; /* space below header */
-        z-index: 2000;
+        padding: 15px;
     }
 
     nav.active {
