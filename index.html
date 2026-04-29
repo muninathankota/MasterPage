@@ -578,57 +578,283 @@
     cursor: pointer;
 }
 
-/* Mobile */
+.menu-toggle {
+    margin-left: auto;
+}
+
+/* ===== MOBILE PERFECT OPTIMIZATION ===== */
 @media (max-width: 768px) {
+
+    body {
+        background: #ffffff;
+    }
+
+    header {
+        padding: 10px 15px;
+    }
+
+    .college-header {
+        height: 50px;
+    }
+
     nav {
         display: none;
         flex-direction: column;
         background: white;
         position: absolute;
-        top: 80px;
+        top: 70px;
         right: 0;
         width: 100%;
         padding: 15px;
+        border-top: 1px solid #eee;
     }
 
     nav.active {
         display: flex;
     }
-	
+
     .menu-toggle {
         display: block;
     }
-}
-@media (max-width: 768px) {
+
+    nav a, .dropbtn {
+        padding: 12px;
+        font-size: 15px;
+        margin-left: 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .hero {
+        padding: 30px 10px;
+    }
+
+    .hero-title-1 { font-size: 20px; }
+    .hero-title-2 { font-size: 18px; }
+    .hero-title-3 { font-size: 14px; }
+
+    .flash-header,
+    .flash-header-simple,
+    .zoom-flash-header {
+        font-size: 18px;
+        animation: none;
+        padding: 8px;
+    }
+
+    .slideshow-container {
+        margin-top: 20px;
+        border-radius: 12px;
+    }
+
     .mySlides img {
+        height: 200px;
+    }
+
+    .info-columns-container {
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px auto;
+    }
+
+    .info-column {
+        padding: 20px;
+    }
+
+    .preview-img {
+        height: 180px;
+    }
+
+    .about-section {
+        padding: 30px 15px;
+    }
+
+    .about-title {
+        font-size: 22px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    .about-highlights,
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+    .leader-card {
+        width: 100%;
+    }
+
+    .leader-card img {
         height: 220px;
     }
-}
-.modal-content {
-    width: 90%;
-    max-width: 400px;
-}
-@media (max-width: 768px) {
-    .hero-title-1 { font-size: 22px; }
-    .hero-title-2 { font-size: 20px; }
-    .hero-title-3 { font-size: 16px; }
 
-    .flash-header-simple { font-size: 26px; }
-    .flash-header { font-size: 20px; }
+    .contact-card {
+        width: 100%;
+    }
+
+    .admission-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .admission-btn {
+        width: 100%;
+        justify-content: center;
+        font-size: 14px;
+        padding: 14px;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 20% auto;
+    }
+
+    .news-ticker {
+        font-size: 12px;
+        top: 65px;
+    }
 }
+}
+/* ===== MOBILE PERFECT OPTIMIZATION ===== */
 @media (max-width: 768px) {
+
+    body {
+        background: #ffffff; /* fix black/grey issue */
+    }
+
+    /* HEADER */
+    header {
+        padding: 10px 15px;
+    }
+
+    .college-header {
+        height: 50px;
+    }
+
+    /* NAV MENU */
+    nav {
+        top: 70px;
+        border-top: 1px solid #eee;
+    }
+
+    nav a, .dropbtn {
+        padding: 12px;
+        font-size: 15px;
+        margin-left: 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    /* HERO CLEAN */
+    .hero {
+        padding: 30px 10px;
+    }
+
+    .hero-title-1 {
+        font-size: 20px;
+    }
+
+    .hero-title-2 {
+        font-size: 18px;
+    }
+
+    .hero-title-3 {
+        font-size: 14px;
+    }
+
+    /* REMOVE HEAVY FLASH EFFECTS */
+    .flash-header,
+    .flash-header-simple,
+    .zoom-flash-header {
+        font-size: 18px;
+        animation: none; /* 🔥 IMPORTANT */
+        padding: 8px;
+    }
+
+    /* SLIDER FIX */
+    .slideshow-container {
+        margin-top: 20px;
+        border-radius: 12px;
+    }
+
+    .mySlides img {
+        height: 200px;
+    }
+
+    /* INFO CARDS */
+    .info-columns-container {
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px auto;
+    }
+
+    .info-column {
+        padding: 20px;
+    }
+
+    .preview-img {
+        height: 180px;
+    }
+
+    /* ABOUT SECTION */
+    .about-section {
+        padding: 30px 15px;
+    }
+
+    .about-title {
+        font-size: 22px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    /* GRID FIX */
     .about-highlights {
         grid-template-columns: 1fr;
     }
-}
-@media (max-width: 768px) {
-    .news-ticker {
-        top: 70px;
-        font-size: 12px;
+
+    .about-features {
+        grid-template-columns: 1fr;
     }
-}
-.menu-toggle {
-    margin-left: auto;
+
+    /* MANAGEMENT CARDS */
+    .leader-card {
+        width: 100%;
+    }
+
+    .leader-card img {
+        height: 220px;
+    }
+
+    /* CONTACT */
+    .contact-card {
+        width: 100%;
+    }
+
+    /* ADMISSION BUTTONS */
+    .admission-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .admission-btn {
+        width: 100%;
+        justify-content: center;
+        font-size: 14px;
+        padding: 14px;
+    }
+
+    /* MODAL */
+    .modal-content {
+        width: 95%;
+        margin: 20% auto;
+    }
+
+    /* NEWS TICKER */
+    .news-ticker {
+        font-size: 12px;
+        top: 65px;
+    }
 }
 </style>
 </head>
@@ -725,7 +951,7 @@
 <div class="info-columns-container">
     <div class="info-column">
         <h2>St. Joseph's College of Engineering</h2>
-        <img src=".jpg" class="preview-img">
+        <img src="slides/8.jpg" class="preview-img">
         <ul class="link-list">
             <li><a href="#" class="openForm">B.E. / B.Tech Courses</a></li>
             <li><a href="#" class="openForm">B.E. / B.Tech Lateral Entry</a></li>
@@ -736,7 +962,7 @@
 
     <div class="info-column">
         <h2>St. Joseph's Garden School</h2>
-        <img src="14" class="preview-img">
+        <img src="slides/14.jpg" class="preview-img">
         <ul class="link-list">
             <li><a href="#" class="openSchoolForm">UKG - XII STD</a></li>
         </ul>
@@ -941,154 +1167,94 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector(".menu-toggle").onclick = function() {
-        document.querySelector("nav").classList.toggle("active");
-    };
-});
-</script>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
+  /* ===== MOBILE MENU ===== */
+  const menuToggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector("nav");
 
-  const modal = document.getElementById("admissionModal");
-  const buttons = document.querySelectorAll(".openForm");
-  const closeButtons = document.querySelectorAll(".close");
-
-closeButtons.forEach(btn => {
-  btn.addEventListener("click", function () {
-    document.getElementById("admissionModal").style.display = "none";
-    document.getElementById("schoolModal").style.display = "none";
-  });
-});
-
-  const form = document.getElementById("admissionForm");
-
-  // OPEN MODAL
-  buttons.forEach(function(btn) {
-  btn.addEventListener("click", function (e) {
-    e.preventDefault();
-    modal.style.display = "block";
-  });
-});
-
-  // CLOSE MODAL
-  close.addEventListener("click", function () {
-    modal.style.display = "none";
-  });
-
-  window.addEventListener("click", function (e) {
-    if (e.target == modal) {
-      modal.style.display = "none";
-    }
-  });
-
-  // 🔥 FORM SUBMIT (THIS IS WHERE fetch GOES)
-  form.addEventListener("submit", function (e) {
-    e.preventDefault(); // stop page reload
-
-    fetch("save.php", {
-      method: "POST",
-      body: new FormData(this)
-    })
-    .then(response => response.text())
-    .then(data => {
-      alert("Form Submitted Successfully!");
-      modal.style.display = "none";
-      form.reset();
-    })
-    .catch(error => {
-      alert("Error submitting form!");
-      console.error(error);
+  if (menuToggle) {
+    menuToggle.addEventListener("click", function () {
+      nav.classList.toggle("active");
     });
-  });
+  }
 
-});
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const modal = document.getElementById("admissionModal");
+  /* ===== MODALS ===== */
+  const admissionModal = document.getElementById("admissionModal");
   const schoolModal = document.getElementById("schoolModal");
 
-  const buttons = document.querySelectorAll(".openForm");
-  const schoolBtns = document.querySelectorAll(".openSchoolForm");
-  const closeButtons = document.querySelectorAll(".close");
+  const openCollegeBtns = document.querySelectorAll(".openForm");
+  const openSchoolBtns = document.querySelectorAll(".openSchoolForm");
+  const closeBtns = document.querySelectorAll(".close");
 
-closeButtons.forEach(btn => {
-  btn.addEventListener("click", function () {
-    document.getElementById("admissionModal").style.display = "none";
-    document.getElementById("schoolModal").style.display = "none";
-  });
-});
-
-  const form = document.getElementById("admissionForm");
-
-  // OPEN COLLEGE MODAL
-  buttons.forEach(btn => {
+  /* OPEN COLLEGE MODAL */
+  openCollegeBtns.forEach(btn => {
     btn.addEventListener("click", function (e) {
       e.preventDefault();
-      modal.style.display = "block";
+      admissionModal.style.display = "block";
     });
   });
 
-  // OPEN SCHOOL MODAL
-  schoolBtns.forEach(btn => {
+  /* OPEN SCHOOL MODAL */
+  openSchoolBtns.forEach(btn => {
     btn.addEventListener("click", function (e) {
       e.preventDefault();
       schoolModal.style.display = "block";
     });
   });
 
-  // CLOSE BOTH MODALS
-  closeButtons.forEach(btn => {
+  /* CLOSE MODALS */
+  closeBtns.forEach(btn => {
     btn.addEventListener("click", function () {
-      modal.style.display = "none";
+      admissionModal.style.display = "none";
       schoolModal.style.display = "none";
     });
   });
 
-  // OUTSIDE CLICK CLOSE
+  /* OUTSIDE CLICK CLOSE */
   window.addEventListener("click", function (e) {
-    if (e.target == modal) modal.style.display = "none";
-    if (e.target == schoolModal) schoolModal.style.display = "none";
+    if (e.target === admissionModal) admissionModal.style.display = "none";
+    if (e.target === schoolModal) schoolModal.style.display = "none";
   });
 
-  // FORM SUBMIT
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+  /* ===== FORM SUBMIT ===== */
+  const form = document.getElementById("admissionForm");
 
-    fetch("save.php", {
-      method: "POST",
-      body: new FormData(this)
-    })
-    .then(response => response.text())
-    .then(data => {
-      alert("Form Submitted Successfully!");
-      modal.style.display = "none";
-      form.reset();
-    })
-    .catch(error => {
-      alert("Error submitting form!");
-      console.error(error);
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      fetch("save.php", {
+        method: "POST",
+        body: new FormData(this)
+      })
+      .then(response => response.text())
+      .then(data => {
+        alert("Form Submitted Successfully!");
+        admissionModal.style.display = "none";
+        form.reset();
+      })
+      .catch(error => {
+        alert("Error submitting form!");
+        console.error(error);
+      });
     });
-  });
-
-// COLLEGE (B.E / B.Tech only)
-const collegeBEBtn = document.querySelector(".openCollegeBE");
-
-collegeBEBtn.addEventListener("click", function(e) {
-  e.preventDefault();
-
-  // open modal
-  document.getElementById("admissionModal").style.display = "block";
-
-  // auto-select course
-  const courseDropdown = document.querySelector('select[name="course"]');
-  if (courseDropdown) {
-    courseDropdown.value = "B.E";
   }
-});
+
+  /* ===== AUTO SELECT B.E BUTTON ===== */
+  const collegeBEBtn = document.querySelector(".openCollegeBE");
+
+  if (collegeBEBtn) {
+    collegeBEBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      admissionModal.style.display = "block";
+
+      const courseDropdown = document.querySelector('select[name="course"]');
+      if (courseDropdown) {
+        courseDropdown.value = "B.E";
+      }
+    });
+  }
 
 });
 </script>
