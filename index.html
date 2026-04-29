@@ -632,17 +632,13 @@
     .hero-title-2 { font-size: 18px; }
     .hero-title-3 { font-size: 14px; }
 
-    .flash-header {
-    animation: blinkHeader 0.8s infinite;
-}
-
-.flash-header-simple {
-    animation: simpleFlash 2s infinite;
-}
-
-.zoom-flash-header {
-    animation: zoomFlash 1.5s infinite ease-in-out;
-}
+    .flash-header,
+    .flash-header-simple,
+    .zoom-flash-header {
+        font-size: 18px;
+        animation: none;
+        padding: 8px;
+    }
 
     .slideshow-container {
         margin-top: 20px;
@@ -718,6 +714,7 @@
         top: 65px;
     }
 }
+}
 /* ===== MOBILE PERFECT OPTIMIZATION ===== */
 @media (max-width: 768px) {
 
@@ -766,12 +763,12 @@
 
     /* REMOVE HEAVY FLASH EFFECTS */
     .flash-header,
-.flash-header-simple,
-.zoom-flash-header {
-    font-size: 18px;
-    padding: 8px;
-    animation: zoomFlash 2.5s ease-in-out infinite;
-}
+    .flash-header-simple,
+    .zoom-flash-header {
+        font-size: 18px;
+        animation: none; /* 🔥 IMPORTANT */
+        padding: 8px;
+    }
 
     /* SLIDER FIX */
     .slideshow-container {
@@ -859,82 +856,6 @@
         top: 65px;
     }
 }
-	@media (max-width: 768px) {
-
-    /* FORCE FULL PAGE WHITE */
-    html, body {
-        background: #ffffff !important;
-    }
-
-    /* MAKE ALL SECTIONS WHITE */
-    section,
-    main,
-    .info-column,
-    .leader-card,
-    .contact-card,
-    .about-section {
-        background: #ffffff !important;
-        color: #1a1a1a !important;
-    }
-
-    /* FIX TEXT COLORS */
-    .leader-name,
-    .leader-role,
-    .about-text,
-    section h2 {
-        color: #002366 !important;
-    }
-
-    /* REMOVE DARK SHADOW LOOK */
-    .leader-card,
-    .info-column,
-    .contact-card {
-        box-shadow: 0 5px 15px rgba(0,0,0,0.08) !important;
-    }
-
-}
-	/* ===== FINAL MOBILE BACKGROUND FIX (STRONG OVERRIDE) ===== */
-@media (max-width: 768px) {
-
-    html, body {
-        background: #ffffff !important;
-        color: #1a1a1a !important;
-    }
-
-    /* Force all major containers to white */
-    .hero,
-    main,
-    section,
-    .about-section,
-    .info-column,
-    .leader-card,
-    .contact-card,
-    .feature-box {
-        background: #ffffff !important;
-        color: #1a1a1a !important;
-    }
-
-    /* Remove dark overlays */
-    .hero {
-        background-image: none !important;
-        background: #ffffff !important;
-    }
-
-    /* Fix text visibility */
-    .hero-title-1,
-    .hero-title-2,
-    .hero-title-3,
-    .flash-header,
-    .flash-header-simple,
-    .zoom-flash-header {
-        color: #002366 !important;
-    }
-
-    /* Remove dark shadows causing grey feel */
-    * {
-        box-shadow: none !important;
-    }
-}
 </style>
 </head>
 
@@ -1010,16 +931,16 @@
     <div class="hero-title-3">Academic Year 2026 - 2027</div>
 
     <div class="slideshow-container">
-        <div class="mySlides fade"><img src="Masterpage/1.jpg"></div>
-        <div class="mySlides fade"><img src="2.jpg"></div>
-        <div class="mySlides fade"><img src="3.jpg"></div>
-	<div class="mySlides fade"><img src="4.jpg"></div>
-	<div class="mySlides fade"><img src="5.jpg"></div>
-	<div class="mySlides fade"><img src="6.jpg"></div>
-	<div class="mySlides fade"><img src="7.jpg"></div>
-	<div class="mySlides fade"><img src="8.jpg"></div>
-	<div class="mySlides fade"><img src="9.jpg"></div>
-	<div class="mySlides fade"><img src="14.jpg"></div>
+        <div class="mySlides fade"><img src="C:\Users\socialmedia\Downloads\Muni Complete\Landing Page\Landing Page Main\slides\1.jpg"></div>
+        <div class="mySlides fade"><img src="C:\Users\socialmedia\Downloads\Muni Complete\Landing Page\Landing Page Main\slides\2.jpg"></div>
+        <div class="mySlides fade"><img src="C:\Users\socialmedia\Downloads\Muni Complete\Landing Page\Landing Page Main\slides\3.jpg"></div>
+	<div class="mySlides fade"><img src="C:\Users\socialmedia\Downloads\Muni Complete\Landing Page\Landing Page Main\slides\4.jpg"></div>
+	<div class="mySlides fade"><img src="C:\Users\socialmedia\Downloads\Muni Complete\Landing Page\Landing Page Main\slides\5.jpg"></div>
+	<div class="mySlides fade"><img src="C:\Users\socialmedia\Downloads\Muni Complete\Landing Page\Landing Page Main\slides\6.jpg"></div>
+	<div class="mySlides fade"><img src="C:\Users\socialmedia\Downloads\Muni Complete\Landing Page\Landing Page Main\slides\7.jpg"></div>
+	<div class="mySlides fade"><img src="C:\Users\socialmedia\Downloads\Muni Complete\Landing Page\Landing Page Main\slides\8.jpg"></div>
+	<div class="mySlides fade"><img src="C:\Users\socialmedia\Downloads\Muni Complete\Landing Page\Landing Page Main\slides\9.jpg"></div>
+	<div class="mySlides fade"><img src="C:\Users\socialmedia\Downloads\Muni Complete\Landing Page\Landing Page Main\slides\14.jpg"></div>
 
 	        <div class="dots-container">
             <span class="dot"></span> <span class="dot"></span> <span class="dot"></span><span class="dot"></span><span class="dot"></span> <span class="dot"></span><span class="dot"></span> <span class="dot"></span> <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
