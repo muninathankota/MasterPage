@@ -632,13 +632,17 @@
     .hero-title-2 { font-size: 18px; }
     .hero-title-3 { font-size: 14px; }
 
-    .flash-header,
-    .flash-header-simple,
-    .zoom-flash-header {
-        font-size: 18px;
-        animation: simpleFlash 2s infinite;
-        padding: 8px;
-    }
+    .flash-header {
+    animation: blinkHeader 0.8s infinite;
+}
+
+.flash-header-simple {
+    animation: simpleFlash 2s infinite;
+}
+
+.zoom-flash-header {
+    animation: zoomFlash 1.5s infinite ease-in-out;
+}
 
     .slideshow-container {
         margin-top: 20px;
@@ -713,7 +717,6 @@
         font-size: 12px;
         top: 65px;
     }
-}
 }
 /* ===== MOBILE PERFECT OPTIMIZATION ===== */
 @media (max-width: 768px) {
