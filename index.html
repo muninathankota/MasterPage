@@ -636,7 +636,7 @@
     .flash-header-simple,
     .zoom-flash-header {
         font-size: 18px;
-        animation: none;
+        animation: simpleFlash 2s infinite;
         padding: 8px;
     }
 
@@ -763,12 +763,12 @@
 
     /* REMOVE HEAVY FLASH EFFECTS */
     .flash-header,
-    .flash-header-simple,
-    .zoom-flash-header {
-        font-size: 18px;
-        animation: none; /* 🔥 IMPORTANT */
-        padding: 8px;
-    }
+.flash-header-simple,
+.zoom-flash-header {
+    font-size: 18px;
+    padding: 8px;
+    animation: zoomFlash 2.5s ease-in-out infinite;
+}
 
     /* SLIDER FIX */
     .slideshow-container {
