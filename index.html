@@ -300,9 +300,10 @@
     }
 
     .about-features {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
 /* CONTACT SECTION DESIGN */
 .contact-container {
     display: flex;
@@ -581,12 +582,12 @@
 .menu-toggle {
     margin-left: auto;
 }
-
-/* ===== MOBILE PERFECT OPTIMIZATION ===== */
+/* ===== CLEAN MOBILE (KEEP DESKTOP LOOK SAME) ===== */
 @media (max-width: 768px) {
 
+    /* DO NOT CHANGE GLOBAL COLORS */
     body {
-        background: #ffffff; /* fix black/grey issue */
+        background: #f0f2f5; /* same as desktop */
     }
 
     /* HEADER */
@@ -595,110 +596,99 @@
     }
 
     .college-header {
-        height: 50px;
+        height: 55px;
     }
 
-    /* NAV MENU */
+    /* MOBILE MENU */
+    .menu-toggle {
+        display: block;
+    }
+
     nav {
-        top: 70px;
-        border-top: 1px solid #eee;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        width: 100%;
+        background: #ffffff;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        padding: 10px 0;
+        border-top: 2px solid #D4AF37;
+    }
+
+    nav.active {
+        display: flex;
     }
 
     nav a, .dropbtn {
-        padding: 12px;
-        font-size: 15px;
-        margin-left: 0;
-        border-bottom: 1px solid #f0f0f0;
-    }
-
-    /* HERO CLEAN */
-    .hero {
-        padding: 30px 10px;
-    }
-
-    .hero-title-1 {
-        font-size: 20px;
-    }
-
-    .hero-title-2 {
-        font-size: 18px;
-    }
-
-    .hero-title-3 {
+        padding: 12px 20px;
         font-size: 14px;
+        border-bottom: 1px solid #eee;
+        margin-left: 0;
     }
 
-    /* REMOVE HEAVY FLASH EFFECTS */
-    .flash-header,
-    .flash-header-simple,
-    .zoom-flash-header {
-        font-size: 18px;
-        animation: none; /* 🔥 IMPORTANT */
-        padding: 8px;
+    /* HERO (KEEP STYLE, JUST SCALE) */
+    .hero {
+        padding: 40px 15px;
     }
 
-    /* SLIDER FIX */
+    .hero-title-1 { font-size: 24px; }
+    .hero-title-2 { font-size: 20px; }
+    .hero-title-3 { font-size: 16px; }
+
+    /* KEEP FLASH EFFECTS (DON'T REMOVE) */
+    .flash-header { font-size: 20px; }
+    .flash-header-simple { font-size: 28px; }
+    .zoom-flash-header { font-size: 20px; }
+
+    /* SLIDER */
+    .mySlides img {
+        height: 250px;
+    }
+
     .slideshow-container {
         margin-top: 20px;
-        border-radius: 12px;
+        border-radius: 15px;
     }
 
-    .mySlides img {
-        height: 200px;
-    }
-
-    /* INFO CARDS */
+    /* INFO SECTION */
     .info-columns-container {
         flex-direction: column;
-        gap: 20px;
-        margin: 20px auto;
+        gap: 25px;
+        margin: 30px auto;
     }
 
     .info-column {
-        padding: 20px;
+        padding: 25px;
     }
 
-    .preview-img {
-        height: 180px;
-    }
-
-    /* ABOUT SECTION */
-    .about-section {
-        padding: 30px 15px;
-    }
-
-    .about-title {
-        font-size: 22px;
-    }
-
-    .about-text {
-        font-size: 14px;
-    }
-
-    /* GRID FIX */
-    .about-highlights {
-        grid-template-columns: 1fr;
+    /* ABOUT */
+    .about-container {
+        flex-direction: column;
     }
 
     .about-features {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr); /* keep structure */
     }
 
-    /* MANAGEMENT CARDS */
+    .about-highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* LEADERS */
     .leader-card {
         width: 100%;
-    }
-
-    .leader-card img {
-        height: 220px;
+        max-width: 320px;
     }
 
     /* CONTACT */
     .contact-card {
         width: 100%;
+        max-width: 320px;
     }
 
-    /* ADMISSION BUTTONS */
+    /* ADMISSION */
     .admission-buttons {
         flex-direction: column;
         gap: 15px;
@@ -707,22 +697,21 @@
     .admission-btn {
         width: 100%;
         justify-content: center;
-        font-size: 14px;
-        padding: 14px;
     }
 
     /* MODAL */
     .modal-content {
-        width: 95%;
-        margin: 20% auto;
+        width: 90%;
+        margin: 25% auto;
     }
 
-    /* NEWS TICKER */
+    /* NEWS TICKER FIX */
     .news-ticker {
-        font-size: 12px;
-        top: 65px;
+        top: 70px;
+        font-size: 13px;
     }
 }
+
 </style>
 </head>
 
