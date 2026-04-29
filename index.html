@@ -859,6 +859,40 @@
         top: 65px;
     }
 }
+	@media (max-width: 768px) {
+
+    /* FORCE FULL PAGE WHITE */
+    html, body {
+        background: #ffffff !important;
+    }
+
+    /* MAKE ALL SECTIONS WHITE */
+    section,
+    main,
+    .info-column,
+    .leader-card,
+    .contact-card,
+    .about-section {
+        background: #ffffff !important;
+        color: #1a1a1a !important;
+    }
+
+    /* FIX TEXT COLORS */
+    .leader-name,
+    .leader-role,
+    .about-text,
+    section h2 {
+        color: #002366 !important;
+    }
+
+    /* REMOVE DARK SHADOW LOOK */
+    .leader-card,
+    .info-column,
+    .contact-card {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08) !important;
+    }
+
+}
 </style>
 </head>
 
