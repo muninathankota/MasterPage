@@ -893,6 +893,48 @@
     }
 
 }
+	/* ===== FINAL MOBILE BACKGROUND FIX (STRONG OVERRIDE) ===== */
+@media (max-width: 768px) {
+
+    html, body {
+        background: #ffffff !important;
+        color: #1a1a1a !important;
+    }
+
+    /* Force all major containers to white */
+    .hero,
+    main,
+    section,
+    .about-section,
+    .info-column,
+    .leader-card,
+    .contact-card,
+    .feature-box {
+        background: #ffffff !important;
+        color: #1a1a1a !important;
+    }
+
+    /* Remove dark overlays */
+    .hero {
+        background-image: none !important;
+        background: #ffffff !important;
+    }
+
+    /* Fix text visibility */
+    .hero-title-1,
+    .hero-title-2,
+    .hero-title-3,
+    .flash-header,
+    .flash-header-simple,
+    .zoom-flash-header {
+        color: #002366 !important;
+    }
+
+    /* Remove dark shadows causing grey feel */
+    * {
+        box-shadow: none !important;
+    }
+}
 </style>
 </head>
 
