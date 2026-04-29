@@ -582,12 +582,11 @@
     margin-left: auto;
 }
 
-/* ===== MOBILE PERFECT OPTIMIZATION (FINAL CLEAN) ===== */
+/* ===== MOBILE PERFECT OPTIMIZATION ===== */
 @media (max-width: 768px) {
 
-    /* PAGE */
     body {
-        background: #ffffff;
+        background: #ffffff; /* fix black/grey issue */
     }
 
     /* HEADER */
@@ -599,54 +598,46 @@
         height: 50px;
     }
 
-    .menu-toggle {
-        display: block;
-    }
-
     /* NAV MENU */
     nav {
-        display: none;
-        flex-direction: column;
-        background: white;
-        position: absolute;
         top: 70px;
-        right: 0;
-        width: 100%;
-        padding: 15px;
         border-top: 1px solid #eee;
     }
 
-    nav.active {
-        display: flex;
-    }
-
-    nav a,
-    .dropbtn {
+    nav a, .dropbtn {
         padding: 12px;
         font-size: 15px;
         margin-left: 0;
         border-bottom: 1px solid #f0f0f0;
     }
 
-    /* HERO */
+    /* HERO CLEAN */
     .hero {
         padding: 30px 10px;
     }
 
-    .hero-title-1 { font-size: 20px; }
-    .hero-title-2 { font-size: 18px; }
-    .hero-title-3 { font-size: 14px; }
+    .hero-title-1 {
+        font-size: 20px;
+    }
 
-    /* REMOVE HEAVY FLASH ON MOBILE */
+    .hero-title-2 {
+        font-size: 18px;
+    }
+
+    .hero-title-3 {
+        font-size: 14px;
+    }
+
+    /* REMOVE HEAVY FLASH EFFECTS */
     .flash-header,
     .flash-header-simple,
     .zoom-flash-header {
         font-size: 18px;
-        animation: none;
+        animation: none; /* 🔥 IMPORTANT */
         padding: 8px;
     }
 
-    /* SLIDER */
+    /* SLIDER FIX */
     .slideshow-container {
         margin-top: 20px;
         border-radius: 12px;
@@ -671,7 +662,7 @@
         height: 180px;
     }
 
-    /* ABOUT */
+    /* ABOUT SECTION */
     .about-section {
         padding: 30px 15px;
     }
@@ -684,12 +675,16 @@
         font-size: 14px;
     }
 
-    .about-highlights,
+    /* GRID FIX */
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+
     .about-features {
         grid-template-columns: 1fr;
     }
 
-    /* MANAGEMENT */
+    /* MANAGEMENT CARDS */
     .leader-card {
         width: 100%;
     }
@@ -703,7 +698,7 @@
         width: 100%;
     }
 
-    /* ADMISSION */
+    /* ADMISSION BUTTONS */
     .admission-buttons {
         flex-direction: column;
         gap: 15px;
